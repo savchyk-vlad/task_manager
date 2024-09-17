@@ -1,14 +1,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Home Page]](<img width="811" alt="Screenshot 2024-09-16 at 11 27 23 PM" src="https://github.com/user-attachments/assets/eedb1583-5e8b-4ebc-bf67-3ff5cc5060ad">)
+[![Home Page]] <img width="811" alt="Screenshot 2024-09-16 at 11 27 23 PM" src="https://github.com/user-attachments/assets/eedb1583-5e8b-4ebc-bf67-3ff5cc5060ad">
 [![Add task modal window]](<img width="536" alt="Screenshot 2024-09-16 at 11 29 58 PM" src="https://github.com/user-attachments/assets/5f33ea40-4925-4520-bc2a-c78682ae2d03">)
 [![Emty Home Page]](<img width="555" alt="Screenshot 2024-09-16 at 11 31 07 PM" src="https://github.com/user-attachments/assets/0b19adde-2186-416d-95ea-c8331c7a3242">)
 
 
 
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
+* Your time should be focused on creating something amazing.
 * You should implement DRY principles to the rest of your life :smile:
 
 ### Installation
