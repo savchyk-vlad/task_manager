@@ -1,11 +1,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Home Page]] <img width="811" alt="Screenshot 2024-09-16 at 11 27 23 PM" src="https://github.com/user-attachments/assets/eedb1583-5e8b-4ebc-bf67-3ff5cc5060ad">
-[![Add task modal window]](<img width="536" alt="Screenshot 2024-09-16 at 11 29 58 PM" src="https://github.com/user-attachments/assets/5f33ea40-4925-4520-bc2a-c78682ae2d03">)
-[![Emty Home Page]](<img width="555" alt="Screenshot 2024-09-16 at 11 31 07 PM" src="https://github.com/user-attachments/assets/0b19adde-2186-416d-95ea-c8331c7a3242">)
+<img width="504" alt="Screenshot 2024-09-16 at 11 38 36 PM" src="https://github.com/user-attachments/assets/3716687e-e0fc-471c-8e20-431b5b4d3106">
 
 
+<img width="504" alt="Screenshot 2024-09-16 at 11 38 52 PM" src="https://github.com/user-attachments/assets/c1ec5507-37d8-4234-9ade-3ef6e6700f89">
+
+   
+<img width="504" alt="Screenshot 2024-09-16 at 11 39 02 PM" src="https://github.com/user-attachments/assets/79bd4c3d-34be-4239-9f7d-f0011753a3e0">
+
+
+<a href="https://www.figma.com/design/UbycaGnBszIkrI6S2JtIzV/Simple-ToDo-List-Design-(Community)?node-id=0-1&t=CveQG4uWRSuD4xaz-1"><strong>Figma template »</strong></a>
 
 * Your time should be focused on creating something amazing.
 * You should implement DRY principles to the rest of your life :smile:
