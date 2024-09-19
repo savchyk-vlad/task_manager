@@ -18,18 +18,20 @@ export const getAllTodos = async () => {
   }
 };
 
-export const createTodo = async (todoData, todoTitle) => {
+export const createTodo = async (todoData, todoToCreate) => {
   try {
-    const isExist = todoData.find(todo => todo.title === todoTitle);
+    const isExist = todoData.find(
+      item => item.task_title === todoToCreate.task_title,
+    );
 
     if (isExist) {
-      console.log(`Todo with title ${todoTitle} is already exist`);
+      console.log(
+        `Todo with title ${todoToCreate.task_title} is already exist`,
+      );
       return;
     }
 
-    const todoRef = await addDoc(collection(db, 'todos'), {
-      title: todoTitle,
-    });
+    const todoRef = await addDoc(collection(db, 'todos'), { ...todoToCreate });
 
     console.log('Success. Todo was created: id ', todoRef.id);
   } catch (e) {
