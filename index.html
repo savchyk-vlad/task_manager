@@ -4,11 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TaskMaster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:wght@300;400;500;600;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <h1>TaskMaster</h1>
-  <script type="module" src="src/app.js"></script>
   <p>This is Mark</p>
-  <script src="src/app.js"></script>
+
+  <!-- Modal Window -->
+  <div class="modal_cover_body_placeholder" id="modal_cover_placeholder">
+  
+  <div class="modal_container">
+    <div>
+      <p class="modal_new_task_header_text">New Task</p>
+      <div class="inputs_container">
+        <input autofocus class="modal_task_title_input" id="task_title_input" type="text" placeholder="Give a task name...">
+        <textarea class="modal_task_textarea" id="task_description_input" placeholder="Give a task description here..." rows="10" cols="30"></textarea>
+      </div>
+    </div>
+    <div class="button_container">
+      <button class="cancel_button" id="cancel_modal_button">Cancel</button>
+      <button class="apply_button" id="apply_modal_button">Apply</button>
+    </div>
+  </div>
+  <script type="module" src="src/app.js"></script>
 </body>
 </html>
