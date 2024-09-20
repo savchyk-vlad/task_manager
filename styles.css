@@ -1,9 +1,14 @@
 @import url("./css/modal.css");
+@import url("./css/title.css");
 @import url("./css/button.css");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box
 }
 
-
+body {
+  background-color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+}
