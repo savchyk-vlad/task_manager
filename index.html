@@ -14,12 +14,25 @@
   <div class="title_container">
     <h1>Task Manager</h1>
   </div>
-  <p>This is Mark</p>
-
+ 
+  <!--Dropdown-->
+    <div class="dropdown">
+      <div class="select">
+        <span class="selected">ALL</span>
+        <div class="caret"></div>
+      </div>
+      <ul class="menu">
+        <li>ALL</li>
+        <li>Completed</li>
+        <li>Incomplete</li>
+      </ul>
+    </div>
+  
   <!-- Add button -->
   <button class="add-button">+</button>
 
   <!-- Modal Window -->
+   
   <div class="modal_cover_body_placeholder" id="modal_cover_placeholder">
   
   <div class="modal_container">
@@ -35,6 +48,7 @@
       <button class="apply_button" id="apply_modal_button">Apply</button>
     </div>
   </div>
+  
   <script type="module" src="src/app.js"></script>
 </body>
 </html>
