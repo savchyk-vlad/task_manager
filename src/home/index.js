@@ -5,6 +5,7 @@ const tasksContainer = document.getElementById('tasks-container');
 export const renderTasksOnHomePage = async () => {
   try {
     const allTodosFromDB = await getAllTodos();
+    tasksContainer.innerHTML = '';
 
     if (allTodosFromDB.length) {
       allTodosFromDB.forEach(task =>
@@ -27,7 +28,7 @@ export const renderTasksOnHomePage = async () => {
                 </svg>
               </button>
               
-              <button class="task-button" onclick="console.log('Delete')">
+              <button class="task-button" onclick="">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3.87414 7.61505C3.80712 6.74386 4.49595 6 5.36971 6H12.63C13.5039 6 14.1927 6.74385 14.1257 7.61505L13.6064 14.365C13.5463 15.1465 12.8946 15.75 12.1108 15.75H5.88894C5.10514 15.75 4.45348 15.1465 4.39336 14.365L3.87414 7.61505Z" stroke="#CDCDCD"/>
                   <path d="M14.625 3.75H3.375" stroke="#CDCDCD" stroke-linecap="round"/>

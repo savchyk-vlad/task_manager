@@ -16,8 +16,12 @@ const taskDescriptionEvent = e => {
   CURRENT_TASK_STATE = { ...CURRENT_TASK_STATE, task_description };
 };
 
-export const closeModal = () => {
+export const handleCloseModal = () => {
   modal.style.display = 'none';
+};
+
+export const handleOpenModal = () => {
+  modal.style.display = 'block';
 };
 
 export const applyModalChanges = () => {
@@ -27,7 +31,7 @@ export const applyModalChanges = () => {
     return;
   }
 
-  closeModal();
+  handleCloseModal();
   return CURRENT_TASK_STATE;
 };
 
