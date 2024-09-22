@@ -1,5 +1,6 @@
 import { getAllTodos, createTodo } from './firebase/features/todo';
 import { applyModalChanges, closeModal } from './modal';
+import { renderTasksOnHomePage } from './home';
 
 const modalCloseButton = document.getElementById('cancel_modal_button');
 const modalApplyButton = document.getElementById('apply_modal_button');
@@ -19,6 +20,8 @@ const handleAddTask = async () => {
     console.log(TODOS);
   }
 };
+
+renderTasksOnHomePage();
 
 modalCloseButton.addEventListener('click', closeModal);
 modalApplyButton.addEventListener('click', handleAddTask);

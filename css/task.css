@@ -115,6 +115,8 @@
   background-color: transparent;
   opacity: 0;
   transition: linear 0.1s;
+  padding: 0 2px;
+  cursor: pointer;
 }
 
 .task:last-child .task-divider {
