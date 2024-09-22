@@ -32,6 +32,9 @@ export const applyModalChanges = () => {
   }
 
   handleCloseModal();
+  taskTitleInput.value = '';
+  CURRENT_TASK_STATE.date = new Date().toISOString();
+
   return CURRENT_TASK_STATE;
 };
 

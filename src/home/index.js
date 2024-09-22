@@ -8,7 +8,11 @@ export const renderTasksOnHomePage = async () => {
     tasksContainer.innerHTML = '';
 
     if (allTodosFromDB.length) {
-      allTodosFromDB.forEach(task =>
+      const sortedTaskByDate = allTodosFromDB.sort(
+        (a, b) => new Date(b.date) - new Date(a.date),
+      );
+
+      sortedTaskByDate.forEach(task =>
         tasksContainer.insertAdjacentHTML(
           'beforeend',
           `<div class="task">
