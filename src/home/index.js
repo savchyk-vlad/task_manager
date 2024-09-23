@@ -2,17 +2,18 @@ import { getAllTodos, deleteTodo } from '../firebase/features/todo';
 
 const tasksContainer = document.getElementById('tasks-container');
 
-export const renderTasksOnHomePage = async () => {
+export const renderTodosOnHomePage = async () => {
   try {
     const allTodosFromDB = await getAllTodos();
-    tasksContainer.innerHTML = '';
 
     if (allTodosFromDB.length) {
-      const sortedTaskByDate = allTodosFromDB.sort(
+      tasksContainer.innerHTML = '';
+
+      const todosSortedByDate = allTodosFromDB.sort(
         (a, b) => new Date(b.date) - new Date(a.date),
       );
 
-      sortedTaskByDate.forEach(task =>
+      todosSortedByDate.forEach(task =>
         tasksContainer.insertAdjacentHTML(
           'beforeend',
           `<div class="task">
@@ -63,11 +64,12 @@ export const renderTasksOnHomePage = async () => {
 
 const handleDelete = async event => {
   try {
-    const taskId = event.target.dataset.id;
+    const todoId = event.target.dataset.id;
 
-    await deleteTodo(taskId);
-    console.log(`Task ${taskId}, was succesfuly deleted!`);
+    await deleteTodo(todoId);
     renderTasksOnHomePage();
+
+    console.log(`Todo id: ${todoId}, was succesfuly deleted!`);
   } catch (error) {
     console.log(error);
   }

@@ -1,6 +1,6 @@
 import { getAllTodos, createTodo } from './firebase/features/todo';
 import { applyModalChanges, handleCloseModal, handleOpenModal } from './modal';
-import { renderTasksOnHomePage } from './home';
+import { renderTodosOnHomePage } from './home';
 
 const modalCloseButton = document.getElementById('cancel_modal_button');
 const modalApplyButton = document.getElementById('apply_modal_button');
@@ -16,7 +16,7 @@ const handleAddTask = async () => {
 
     TODOS = [...updatedTodosFromDB];
 
-    renderTasksOnHomePage();
+    renderTodosOnHomePage();
   }
 };
 
@@ -35,5 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.value = '';
   });
 
-  renderTasksOnHomePage();
+  renderTodosOnHomePage();
 });
