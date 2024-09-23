@@ -17,59 +17,11 @@
   <p>This is Mark</p>
 
   <!-- Tasks container -->
-  <div class="tasks-container">
-    <div class="task">
-      <div class="task-inner-container">
-        <div class="task-left-side">
-          <label class="task-checkbox-container">
-            <input type="checkbox" class="task-checkbox">
-            <span class="task-checkmark"></span>
-          </label>
-          <span class="task-title">NOTE #1</span>
-        </div>
-
-        <div class="task-actions">
-          <button class="task-button">
-            <img src='./assets/pen.svg' alt="edit icon" class="task-icon">
-          </button>
-          
-          <button class="task-button">
-            <img src='./assets/trash-can.svg' alt="edit icon" class="task-icon">
-          </button>
-        </div>
-      </div>
-
-      <hr class="task-divider">
-    </div>
-
-    <div class="task">
-      <div class="task-inner-container">
-        <div class="task-left-side">
-          <label class="task-checkbox-container">
-            <input type="checkbox" class="task-checkbox">
-            <span class="task-checkmark"></span>
-          </label>
-          <span class="task-title">NOTE #2</span>
-        </div>
-
-        <div class="task-actions">
-          <button class="task-button">
-            <img src='./assets/pen.svg' alt="edit icon" class="task-icon">
-          </button>
-          
-          <button class="task-button">
-            <img src='./assets/trash-can.svg' alt="edit icon" class="task-icon">
-          </button>
-        </div>
-      </div>
-
-      <hr class="task-divider">
-    </div>
-  </div>
+  <div class="tasks-container" id="tasks-container"></div>
 
 
   <!-- Add button -->
-  <button class="add-button">+</button>
+  <button class="add-button" id="open-modal-button">+</button>
 
   <!-- Modal Window -->
   <div class="modal_cover_body_placeholder" id="modal_cover_placeholder">
@@ -79,7 +31,7 @@
       <p class="modal_new_task_header_text">New Task</p>
       <div class="inputs_container">
         <input autofocus class="modal_task_title_input" id="task_title_input" type="text" placeholder="Give a task name...">
-        <textarea class="modal_task_textarea" id="task_description_input" placeholder="Give a task description here..." rows="10" cols="30"></textarea>
+        <!-- <textarea class="modal_task_textarea" id="task_description_input" placeholder="Give a task description here..." rows="10" cols="30"></textarea> -->
       </div>
     </div>
     <div class="button_container">

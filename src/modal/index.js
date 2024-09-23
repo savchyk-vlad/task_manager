@@ -10,14 +10,18 @@ const taskTitleEvent = e => {
   CURRENT_TASK_STATE = { ...CURRENT_TASK_STATE, task_title };
 };
 
-const taskDescriptionEvent = e => {
-  const task_description = e.target.value;
+// const taskDescriptionEvent = e => {
+//   const task_description = e.target.value;
 
-  CURRENT_TASK_STATE = { ...CURRENT_TASK_STATE, task_description };
+//   CURRENT_TASK_STATE = { ...CURRENT_TASK_STATE, task_description };
+// };
+
+export const handleCloseModal = () => {
+  modal.style.display = 'none';
 };
 
-export const closeModal = () => {
-  modal.style.display = 'none';
+export const handleOpenModal = () => {
+  modal.style.display = 'block';
 };
 
 export const applyModalChanges = () => {
@@ -27,9 +31,12 @@ export const applyModalChanges = () => {
     return;
   }
 
-  closeModal();
+  handleCloseModal();
+  taskTitleInput.value = '';
+  CURRENT_TASK_STATE.date = new Date().toISOString();
+
   return CURRENT_TASK_STATE;
 };
 
 taskTitleInput.addEventListener('input', taskTitleEvent);
-taskDescriptionInput.addEventListener('input', taskDescriptionEvent);
+// taskDescriptionInput.addEventListener('input', taskDescriptionEvent);

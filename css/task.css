@@ -22,7 +22,7 @@
 
 .task-left-side {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .task-checkbox-container {
@@ -31,7 +31,7 @@
 
 .task-checkbox {
   position: absolute;
-  top: -10;
+  top: -17;
   left: 0;
   width: 20px;
   height: 20px;
@@ -39,7 +39,7 @@
 
 .task-checkmark {
   position: absolute;
-  top: -10;
+  top: -17;
   left: 0;
   width: 20px;
   height: 20px;
@@ -115,6 +115,8 @@
   background-color: transparent;
   opacity: 0;
   transition: linear 0.1s;
+  padding: 0 2px;
+  cursor: pointer;
 }
 
 .task:last-child .task-divider {

@@ -27,6 +27,7 @@
   width: 100%;
 }
 .modal_task_title_input {
+  margin-bottom: 180px;
   min-width: 500px;
   padding: 8px;
   border: 1px solid #6C63FF;
