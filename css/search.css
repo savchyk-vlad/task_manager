@@ -1,11 +1,12 @@
 .search-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   width: 100vw;
   margin: 0;
 }
 
 form {
+  align-self: center;
   color: #555;
   display: flex;
   width: 100%;

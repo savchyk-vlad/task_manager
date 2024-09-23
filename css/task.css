@@ -10,8 +10,9 @@
   display: flex;
   flex-direction: column;
   padding: 0 10px 10px;
-  width: 40%;
   cursor: pointer;
+  max-width: 600px;
+  width: 100%;
 }
 
 .task-inner-container {
