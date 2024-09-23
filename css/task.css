@@ -1,0 +1,127 @@
+.tasks-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 10px;
+  width: 40%;
+  cursor: pointer;
+}
+
+.task-inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.task-left-side {
+  display: flex;
+  align-items: center;
+}
+
+.task-checkbox-container {
+  position: relative;
+}
+
+.task-checkbox {
+  position: absolute;
+  top: -10;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.task-checkmark {
+  position: absolute;
+  top: -10;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #6C63FF;
+  border-radius: 3px;
+  transition: linear .1s;
+  cursor: pointer;
+}
+
+.task-checkbox-container:hover .task-checkmark {
+  background-color: #6b63ff82 ;
+}
+
+.task-checkmark:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+}
+
+.task-checkbox:checked ~ .task-checkmark:after {
+  opacity: 1;
+}
+
+.task-checkbox:checked ~ .task-checkmark {
+  background-color: #6b63ff ;
+}
+
+.task-checkbox-container .task-checkmark:after {
+  left: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(42deg);
+  -ms-transform: rotate(42deg);
+  transform: rotate(42deg);
+}
+
+.task-title {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.task-title-through {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  flex-grow: 1;
+  text-decoration: line-through;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task-divider {
+  width: 100%;
+  border: 0.2px solid #6C63FF;
+  margin-top: 10px;
+}
+
+.task-button {
+  border: none;
+  background-color: transparent;
+  opacity: 0;
+  transition: linear 0.1s;
+}
+
+.task:last-child .task-divider {
+  display: none;
+}
+
+.task:hover .task-button {
+  opacity: 1;
+}
+

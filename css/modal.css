@@ -7,7 +7,7 @@
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.587);
   height: 100vh;
-  display: block;
+  display: none;
 }
 .modal_container {
   position: absolute;
@@ -29,7 +29,7 @@
 .modal_task_title_input {
   min-width: 500px;
   padding: 8px;
-  border: 1px solid #7b61ff;
+  border: 1px solid #6C63FF;
   border-radius: 6px;
   outline: none;
   font-size: 16px; 
@@ -55,10 +55,10 @@
 }
 .cancel_button {
   padding: 10px 20px;
-  border: 1px solid #7b61ff;
+  border: 1px solid #6C63FF;
   border-radius: 10px;
   background-color: transparent;
-  color: #7b61ff;
+  color: #6C63FF;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -67,7 +67,7 @@
   text-transform: uppercase;
 }
 .cancel_button:hover {
-  background-color: #7b61ff;
+  background-color: #6C63FF;
   color: white;
 }
 .apply_button {
@@ -75,7 +75,7 @@
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
-  background-color: #7b61ff;
+  background-color: #6C63FF;
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -84,7 +84,7 @@
   transition: background-color 0.3s ease;
 }
 .apply_button:hover {
-  background-color: #5f48e1;
+  background-color: #6C63FF;
 }
 .modal_task_title_input {
   color: #000000;
@@ -97,7 +97,7 @@
   margin: 20px 0 50px;
   padding: 6px;
   width: 100%;
-  border: 1px solid #7b61ff;
+  border: 1px solid #6C63FF;
   border-radius: 6px;
   outline: none;
   font-size: 16px; 
