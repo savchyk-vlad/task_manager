@@ -27,3 +27,15 @@ renderTasksOnHomePage();
 modalCloseButton.addEventListener('click', handleCloseModal);
 modalApplyButton.addEventListener('click', handleAddTask);
 modalOpenButton.addEventListener('click', handleOpenModal);
+
+// Search bar
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form');
+  const searchInput = document.getElementById('searchInput');
+  
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log(searchInput.value);
+    searchInput.value = '';
+});
+});
