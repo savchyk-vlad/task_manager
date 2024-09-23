@@ -22,3 +22,15 @@ const handleAddTask = async () => {
 
 modalCloseButton.addEventListener('click', closeModal);
 modalApplyButton.addEventListener('click', handleAddTask);
+
+// Search bar
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form');
+  const searchInput = document.getElementById('searchInput');
+  
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log(searchInput.value);
+    searchInput.value = '';
+});
+});

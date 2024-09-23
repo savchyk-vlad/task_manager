@@ -1,6 +1,7 @@
 @import url("./css/modal.css");
 @import url("./css/title.css");
 @import url("./css/button.css");
+@import url("./css/search.css");
 
 * {
   padding: 0;
@@ -11,4 +12,7 @@
 body {
   background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
