@@ -1,4 +1,10 @@
-import { collection, addDoc, getDocs } from 'firebase/firestore';
+import {
+  collection,
+  addDoc,
+  getDocs,
+  deleteDoc,
+  doc,
+} from 'firebase/firestore';
 
 import { db } from '../config';
 const todosCollectionRef = collection(db, 'todos');
@@ -36,5 +42,15 @@ export const createTodo = async (todoData, todoToCreate) => {
     console.log('Success. Todo was created: id ', todoRef.id);
   } catch (e) {
     console.error('Error adding document: ', e);
+  }
+};
+
+export const deleteTodo = async todoToRemoveId => {
+  try {
+
+    console.log(todoToRemoveId)
+    await deleteDoc(doc(db, 'todos', todoToRemoveId));
+  } catch (error) {
+    console.log(error);
   }
 };
