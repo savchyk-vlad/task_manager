@@ -1,4 +1,10 @@
-import { collection, addDoc, getDocs } from 'firebase/firestore';
+import {
+  collection,
+  addDoc,
+  getDocs,
+  deleteDoc,
+  doc,
+} from 'firebase/firestore';
 
 import { db } from '../config';
 const todosCollectionRef = collection(db, 'todos');
@@ -14,27 +20,32 @@ export const getAllTodos = async () => {
 
     return todos;
   } catch (error) {
-    console.error('Error geting document: ', e);
+    console.log(error.message);
   }
 };
 
 export const createTodo = async (todoData, todoToCreate) => {
   try {
-    const isExist = todoData.find(
-      item => item.task_title === todoToCreate.task_title,
-    );
+    const newTaskTitle = todoToCreate.task_title;
+    const isExist = todoData.find(item => item.task_title === newTaskTitle);
 
     if (isExist) {
-      console.log(
-        `Todo with title ${todoToCreate.task_title} is already exist`,
-      );
+      console.log(`Todo with title ${newTaskTitle} is already exist`);
       return;
     }
 
     const todoRef = await addDoc(collection(db, 'todos'), { ...todoToCreate });
-
     console.log('Success. Todo was created: id ', todoRef.id);
   } catch (e) {
-    console.error('Error adding document: ', e);
+    console.log(error.message);
+  }
+};
+
+export const deleteTodo = async todoToRemoveId => {
+  try {
+    await deleteDoc(doc(db, 'todos', todoToRemoveId));
+    console.log('Success. Todo was deleted: id ', todoToRemoveId);
+  } catch (error) {
+    console.log(error.message);
   }
 };
